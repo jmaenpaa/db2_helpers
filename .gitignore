@@ -6,4 +6,5 @@
 .vscode/*
 .pytest_cache
 .venv
+__pycache__
 /src/db2_helpers.egg-info/
