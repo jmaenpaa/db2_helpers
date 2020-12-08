@@ -1,0 +1,9 @@
+*.key
+*.arm
+*.pickle
+.DS_Store
+.idea/*
+.vscode/*
+.pytest_cache
+.venv
+/src/db2_helpers.egg-info/
