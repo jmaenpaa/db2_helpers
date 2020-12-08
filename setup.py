@@ -19,12 +19,12 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='db2_helpers',
-    version='0.1.1',
+    version='0.1.2',
     description='Helper functions for managing database connections',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/jmaenpaa/db_helpers',
-    author='db2solutions LLC',
+    url='https://github.com/jmaenpaa/db2_helpers',
+    author='John Maenpaa',
     author_email='johnmaenpaa@db2solutions.com',
     classifiers=[
         'Development Status :: 3 - Alpha',
@@ -57,7 +57,7 @@ setup(
         ],
     },
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/jmaenpaa/db_helpers/issues',
-        'Source': 'https://github.com/jmaenpaa/db_helpers/',
+        'Bug Reports': 'https://github.com/jmaenpaa/db2_helpers/issues',
+        'Source': 'https://github.com/jmaenpaa/db2_helpers/',
     },
 )

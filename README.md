@@ -1,4 +1,4 @@
-# db_helpers
+# db2_helpers
 Python helper functions to simplify management of Db2 database connections.
 
 This package contains commands and helper functions for managing settings for Db2 databases.
