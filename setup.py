@@ -19,7 +19,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='db2_helpers',
-    version='0.1.2',
+    version='0.1.3',
     description='Helper functions for managing database connections',
     long_description=long_description,
     long_description_content_type='text/markdown',
