@@ -6,7 +6,7 @@
 #
 cffi==1.14.4              # via cryptography
 click==7.1.2              # via db2_helpers (setup.py)
-cryptography==3.2.1       # via db2_helpers (setup.py)
+cryptography==3.3.1       # via db2_helpers (setup.py)
 ibm-db==3.0.2             # via db2_helpers (setup.py)
 pycparser==2.20           # via cffi
 six==1.15.0               # via cryptography
