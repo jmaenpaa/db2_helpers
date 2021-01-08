@@ -126,7 +126,7 @@ def db_connect(settings: collections.OrderedDict = None) -> ibm_db.IBM_DBConnect
                                settings["uid"],
                                settings["pwd"])
 
-    # Get a database handle (hdbc) and a statement handle (hstmt) for subsequent access to DB2
+    # Get a database handle (hdbc) for subsequent access to DB2
     try:
         _hdbc = ibm_db.connect(dsn, "", "")
     except Exception as err:

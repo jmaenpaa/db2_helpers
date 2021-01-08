@@ -19,7 +19,7 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
     name='db2_helpers',
-    version='0.1.4',
+    version='0.1.5',
     description='Helper functions for managing database connections',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -33,12 +33,12 @@ setup(
         'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3 :: Only',
     ],
-    keywords='db2 ibm_db',  # Optional
+    keywords='db2 ibm_db',
     license='MIT License',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
     python_requires='>=3.8, <4',
-    install_requires=['cryptography', 'ibm_db', 'click'],  # Optional
+    install_requires=['cryptography>=3.3.1', 'ibm_db>=3.0.2', 'click>=7.1.2'],
     extras_require={  # Optional
         'dev': ['check-manifest'],
         'test': ['coverage'],
