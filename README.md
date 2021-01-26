@@ -9,7 +9,7 @@ More than one concurrent database connections is **not** supported at this time.
 
 Install using pip or clone the repository and modify to your heart's content.
 
-```bash
+```sh
     pip install db2_helpers
 ```
 
@@ -131,7 +131,7 @@ and original source repository is [here](https://github.com/jmaenpaa/db2_helpers
 
    #### --help
 
-   Display help informatin for the command.
+   Display help information for the command.
 
 ## Recommendations
 
