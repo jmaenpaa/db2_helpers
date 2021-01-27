@@ -64,11 +64,11 @@ _default_settings = collections.OrderedDict([
     ("hostname", "localhost"),
     ("protocol", "tcpip"),
     ("port", "50000"),
+    ("security", "nossl"),
+    ("servercert", "db2inst1.arm"),
     ("uid", "db2inst1"),
     ("pwd", "password"),
     ("environment", _default_environment),
-    ("security", "nossl"),
-    ("servercert", "db2inst1.arm"),
     ("secrethash", "")  # Hash of secret key used to encrypt password
 ])
 
@@ -79,9 +79,9 @@ _prompt_label = collections.OrderedDict([
     ("hostname", "host name for database"),
     ("protocol", "protocol for database"),
     ("port", "port for tcpip connection"),
+    ("servercert", "certificate file for database"),
     ("uid", "userid for database connection"),
     ("pwd", "password for database connection"),
-    ("servercert", "certificate file for database"),
 ])
 
 
@@ -92,8 +92,17 @@ def db_connect(settings: collections.OrderedDict = None) -> ibm_db.IBM_DBConnect
 
     if _hdbc and db_connected():
         return _hdbc
-    if not settings["database"]:
-        print("Settings are incorrect")
+    if not settings:
+        print("Settings not loaded")
+        _hdbc = None
+        return _hdbc
+    try:
+        if not settings["database"]:
+            print("Settings are incorrect")
+            _hdbc = None
+            return _hdbc
+    except KeyError:
+        print("Settings content is corrupted")
         _hdbc = None
         return _hdbc
 
